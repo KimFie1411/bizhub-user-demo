@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talamaz Kitchen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans">
+  <!-- Header -->
+  <header class="bg-[#442626] text-white p-4">
+    <div class="flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Kampung Budiman</h1>
+      <nav class="space-x-4 bg-white text-black p-2 rounded shadow">
+        <a href="#" class="hover:text-blue-500">Home</a>
+        <a href="#" class="hover:text-blue-500">About</a>
+        <a href="#" class="hover:text-blue-500">Hubungi Kami</a>
+        <a href="#" class="hover:text-blue-500">Daftar Bisnes</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Business Detail Section -->
+  <section class="p-6 md:flex gap-6">
+    <img src="/talamaz.jpg" class="w-full md:w-1/3 object-cover rounded" />
+
+    <div class="md:w-2/3 space-y-4">
+      <h2 class="text-2xl font-semibold">TALAMAZ KITCHEN</h2>
+      <p>Lot 4038 Jalan Hamzah<br>Kg Budiman Meru 41050 Klang, Selangor</p>
+      <p><strong>Abdolah - 01110975439</strong></p>
+      <p class="text-gray-600">Body text for describing what this product Offer and why this product is simply a must-buy.</p>
+      <button class="bg-gray-200 text-black px-6 py-2 rounded text-lg">Tempah Sekarang</button>
+    </div>
+  </section>
+
+  <!-- Product / Service Info -->
+  <section class="p-6">
+    <div class="flex justify-between items-center">
+      <h3 class="text-lg font-semibold">Produk / maklumat perkhidmatan</h3>
+      <span onclick="toggleInfo()" class="text-2xl font-bold cursor-pointer">+</span>
+    </div>
+    <div id="infoContent">
+      <p id="description" class="text-sm mt-2 mb-4">Hubungi kami untuk lebih juadah<br>TALAMAZ KITCHEN Menu:</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="border rounded p-2">
+        <img src="/seri-muka.jpg" class="w-full h-40 object-cover rounded" />
+        <h4 class="font-semibold mt-2">Seri Muka</h4>
+        <p class="text-sm text-gray-600">Description of A</p>
+        <p class="font-bold">RM2</p>
+      </div>
+      <div class="border rounded p-2">
+        <img src="/tepung-pelita.jpg" class="w-full h-40 object-cover rounded" />
+        <h4 class="font-semibold mt-2">Tepong Pelita</h4>
+        <p class="text-sm text-gray-600">Description of B</p>
+        <p class="font-bold">RM2</p>
+      </div>
+      <div class="border rounded p-2">
+        <img src="/karipap.jpg" class="w-full h-40 object-cover rounded" />
+        <h4 class="font-semibold mt-2">Karipap</h4>
+        <p class="text-sm text-gray-600">Description of C</p>
+        <p class="font-bold">RM2</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews -->
+  <section class="bg-gray-100 p-6">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="text-lg font-semibold">Customer Review</h3>
+      <span onclick="toggleReviews()" class="text-2xl font-bold cursor-pointer">+</span>
+    </div>
+    <div id="reviewContent" class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold">Faiz Super</h4>
+        <p class="text-sm text-gray-500">10 hari lalu</p>
+        <p class="text-yellow-500">★★★★★</p>
+        <p class="text-sm">Servis Mantap, Laju</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold">Alif Giostar</h4>
+        <p class="text-sm text-gray-500">4 hari lalu</p>
+        <p class="text-yellow-500">★★★★★</p>
+        <p class="text-sm">Kuih Sedap dan enak</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold">Amirul</h4>
+        <p class="text-sm text-gray-500">2 bulan lalu</p>
+        <p class="text-yellow-500">★★★★★</p>
+        <p class="text-sm">Byk jenis makanan dgn sedap</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold">Syahmi</h4>
+        <p class="text-sm text-gray-500">3 hari lalu</p>
+        <p class="text-yellow-500">★★★★★</p>
+        <p class="text-sm">Kedai bersih dan ramah</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#442626] text-white p-6 mt-10">
+    <div class="flex justify-between items-start">
+      <div>
+        <p class="font-semibold">Kampung Budiman</p>
+        <div class="flex space-x-3 mt-2">
+          <a href="#"><img src="/facebook-icon.svg" class="w-5 h-5" /></a>
+          <a href="#"><img src="/linkedin-icon.svg" class="w-5 h-5" /></a>
+          <a href="#"><img src="/youtube-icon.svg" class="w-5 h-5" /></a>
+          <a href="#"><img src="/instagram-icon.svg" class="w-5 h-5" /></a>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-4">
+        <div>
+          <p class="font-semibold">Alamat</p>
+          <p class="text-sm">Page</p>
+          <p class="text-sm">Page</p>
+        </div>
+        <div>
+          <p class="font-semibold">Email</p>
+          <p class="text-sm">Page</p>
+          <p class="text-sm">Page</p>
+        </div>
+        <div>
+          <p class="font-semibold">Topik</p>
+          <p class="text-sm">Page</p>
+          <p class="text-sm">Page</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleInfo() {
+      const info = document.getElementById("infoContent");
+      info.classList.toggle("hidden");
+    }
+
+    function toggleReviews() {
+      const reviews = document.getElementById("reviewContent");
+      reviews.classList.toggle("hidden");
+    }
+  </script>
+</body>
+
+</html>
